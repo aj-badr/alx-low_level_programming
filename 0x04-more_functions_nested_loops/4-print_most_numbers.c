@@ -1,25 +1,21 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_most_numbers - function that prints the numbers.
- * Return: 0 to 9 except 2 and 4.
+ * print_most_numbers - Print numbers between 0 to 9 incl.
+ *
+ * Return: Void.
  */
-
 void print_most_numbers(void)
 {
+	int i;
 
-int x;
-
-for (; x <= 9; x++)
-{
-if (x == 2 || x == 9)
-{
-continue;
-}
-else
-{
-_putchar(x + '0');
-}
-}
-_putchar('\n');
+	for (i = 0; i < 10; i++)
+	{
+		if (i != 2 && i != 4)
+		{
+			_putchar(i + '0');
+		}
+	}
+	_putchar('\n');
 }
